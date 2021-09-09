@@ -15,7 +15,7 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .parent {
   background-color: #eee;
@@ -29,19 +29,19 @@ html {
 /* small */
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 90%;
   }
 }
 /* Medium */
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 90%;
   }
 }
 /* large */
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 90%;
   }
 }
 /* End Global Rules  */
@@ -445,7 +445,7 @@ html {
 }
 .contact .info .social i {
   margin-left: 10px;
-  color: var(--secondary-color)777;
+  color: var(--secondary-color) 777;
 }
 /* End Contact */
 /* Start Footer */
