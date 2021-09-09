@@ -198,8 +198,18 @@ html {
 }
 .features .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 20px;
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .features .container {
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  }
+}
+@media (max-width: 767px){
+  .features .container {
+    grid-template-columns: repeat(auto-fill, minmax(95%, 1fr));
+  }
 }
 .features .feat {
   margin-top: 30px;
@@ -228,9 +238,19 @@ html {
 }
 .services .service-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 30px;
   margin-top: 100px;
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .services .service-content {
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  }
+}
+@media (max-width: 767px){
+  .services .service-content {
+    grid-template-columns: repeat(auto-fill, minmax(95%, 1fr));
+  }
 }
 .services .service-content .srv {
   display: flex;
@@ -296,8 +316,18 @@ html {
 }
 .portfolio .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   grid-gap: 20px;
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .portfolio .container {
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  }
+}
+@media (max-width: 767px){
+  .portfolio .container {
+    grid-template-columns: repeat(auto-fill, minmax(95%, 1fr));
+  }
 }
 .portfolio .card {
   margin-top: 30px;
@@ -333,7 +363,7 @@ html {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (max-width: 991px) {
   .about .about-content {
@@ -343,7 +373,6 @@ html {
 }
 .about .about-content .image {
   position: relative;
-  width: 250px;
   height: 375px;
 }
 @media (max-width: 991px) {
@@ -351,9 +380,15 @@ html {
     margin: 0 auto 60px auto;
   }
 }
+@media (min-width: 992px){
+  .about .about-content .image{
+    width: 25%;
+  }
+}
 .about .about-content .image img {
   max-width: 100%;
   min-height: 100%;
+  border-radius:4px;
 }
 .about .about-content .image::before {
   content: "";
@@ -383,7 +418,7 @@ html {
   }
 }
 .about .about-content .text {
-  flex-basis: calc(100% - 500px);
+  flex-basis: 50%;
 }
 .about .about-content p:first-of-type {
   font-weight: bold;
