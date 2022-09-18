@@ -1,1 +1,1 @@
-https://site-one-demo-htmlcss.netlify.app/
+https://developer-portfolio-simple-demo.netlify.app/
